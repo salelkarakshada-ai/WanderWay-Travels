@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WanderWay Travels</title>
+<link rel="stylesheet" href="css/style.css">
+
+<meta name="viewpoint"
+content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="packages.html">Packages</a>  |
+<a href="about.html">About Us</a>  |
+<a href="contact.html">Contact</a>   |<br>
+</nav>
+
+<!-- Hero section -->
+<section class="hero">
+<img src="images/hero.jpg" alt="Travel Hero"
+class="hero-img">
+<div class="hero-content">
+<h1>Explore the World with WanderWay Travels</h1>
+<p>Your adventure starts here! Discover
+amazing destionations at unbeatable prices.</p>
+<button onclick="window.location.href='packages.html'">See Packages</button>
+</div>
+</section>
+
+<input type="text" id="searchBox"
+placeholder="Search destinations...">
+<button id="searchBtn">Search</button>
+
+<h1>WanderWay Travels</h1>
+<p>Your trusted travel partner</p>
+
+
+<section class="featured">
+<h2>Popular Destinations</h2>
+<div class="cards">
+<div class="card">
+<img src="images/goa.jpg" alt="Goa">
+<h3>Goa</h3>
+<p>Beaches, nightlife & relaxation.</p>
+</div>
+<div class="card">
+<img src="images/kerala.jpg" alt="Kerala">
+<h3>Kerala</h3>
+<p>Backwaters and greenery.</p>
+</div>
+<div class="card">
+<img src="images/rajasthan.jpg" alt="Rajasthan">
+<h3>Rajasthan</h3>
+<p>Royal palaces & culture.</p>
+</div>
+<div class="card">
+<img src="images/kashmir.jpg" alt="Kashmir">
+<h3>Kashmir</h3>
+<p>Heaven on Earth.</p>
+</div>
+</div>
+</section>
+
+
+<button
+onclick="window.location.href='packages.html'">
+View Packages
+</button>
+<button
+onclick="window.location.href='contact.html'">
+Book Now
+</button>
+
+
+<p>
+<a href="404.html">Click here for more information</a>
+</p>
+
+<button onclick="topFunction()" id="topBtn">Back to Top</button>
+<footer>
+<hr>
+<p><strong>WanderWay Travels</strong></p>
+<p>123, MG Road, Panaji, Goa - 403001</p>
+<p>Phone: +91 98765 43210</p>
+<p>Email: wanderwaytravels@gmail.com</p>
+<p>© 2026 Wanderway Travels. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+document.getElementById('searchBtn').addEventListener('click', function() {
+// Get user input
+var query = document.getElementById('searchBox').value.toLowerCase().trim();
+// Map destinations to their package page anchors
+var destinations = {
+'goa': 'packages.html#goa',
+'paris': 'packages.html#paris',
+'dubai': 'packages.html#dubai',
+'manali': 'packages.html#manali'
+};
+if(destinations[query]) {
+window.location.href = destinations[query];
+} else {
+alert('Destination not found!');
+}
+});
+</script>
+
+</body>
+</html>

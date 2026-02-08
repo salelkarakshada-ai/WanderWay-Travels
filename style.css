@@ -1,0 +1,313 @@
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+nav {
+background-color: #f2f2f2;
+padding: 10px;
+}
+nav a {
+text-decoration: none;
+margin-right: 10px;
+color: #333;
+}
+button {
+padding: 8px 12px;
+margin: 5px;
+cursor: pointer;
+}
+footer {
+margin-top: 40px;
+font-size: 14px;
+}
+
+.breadcrumb {
+font style: 14px;
+margin-bottom: 15px;
+}
+
+
+/* Hero Section */
+.hero {
+
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+position: relative;
+}
+.hero::after {
+content: '';
+position: absolute;
+top:0; left:0; right:0; bottom:0;
+background-color: rgba(0,0,0,0.4); /* dark overlay */
+}
+.hero-content {
+position: relative;
+z-index: 1;
+}
+.hero-content h1 {
+font-size: 36px;
+margin-bottom: 15px;
+}
+.hero-content p {
+font-size: 18px;
+margin-bottom: 20px;
+}
+.hero-content button {
+background-color: #0a3d62;
+color: white;
+border: none;
+padding: 12px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+.hero-content button:hover {
+background-color: #07406b;
+}
+
+.hero {
+position: relative;
+text-align: center;
+height: 400px;
+overflow: hidden;
+}
+.hero-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.hero-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.hero-content h1 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+.hero-content p {
+font-size: 18px;
+margin-bottom: 15px;
+}
+.hero-content button {
+background-color: #0a3d62;
+color: white;
+border: none;
+padding: 12px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+.hero-content button:hover {
+background-color: #07406b;
+}
+.hero-content {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+color:white; 
+text-align: centerl
+z-index:1;
+}
+
+/* Page Background */
+body {
+background-color: #f4f6f8; /* light gray background */
+color: #333; /* default text color */
+font-family: Arial, sans-serif;
+}
+/* Navbar */
+nav {
+background-color: #0a3d62; /* dark blue */
+padding: 12px;
+}
+nav a {
+color: #ffffff; /* white text */
+margin-right: 15px;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #f39c12; /* orange on hover */
+}
+/* Headings */
+h1, h2 {
+color: #0a3d62; /* dark blue headings */
+}
+/* Buttons */
+button {
+background-color: #0a3d62; /* dark blue */
+color: #ffffff;
+border: none;
+padding: 20px 30px;
+border-radius: 10px;
+cursor: pointer;
+}
+button:hover {
+background-color: #00a8ff; /* sky blue on hover */
+}
+/* Hero Section */
+.hero-content button {
+background-color: #f39c12; /* orange call-to-action */
+}
+.hero-content button:hover {
+background-color: #ff9f1c; /* lighter orange on hover */
+}
+
+.hero-content  {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+color:white; 
+text-align: centerl
+z-index:1;
+}
+.hero-content h1 {
+color:white;
+font-size:36px;
+margin-bottom:10px;
+}
+
+
+
+/* Footer */
+footer {
+background-color: #0a3d62; /* dark blue */
+color: white;
+padding: 15px;
+text-align: center;
+}
+
+/* Destinations container */
+.destinations {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 20px;
+max-width: 1000px;
+margin: 20px auto;
+}
+/* Individual destination card */
+.destination {
+background-color: #ffffff; /* white card background */
+border-radius: 10px;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+flex: 1 1 45%; /* two cards per row */
+max-width: 45%;
+text-align: center;
+box-sizing: border-box;
+border-top: 5px solid #00a8ff; /* colored top border */
+transition: transform 0.3s, box-shadow 0.3s, border-top-color 0.3s;
+}
+/* Image inside card */
+.destination img {
+width: 300%;
+height: auto;
+border-radius: 20px;
+}
+/* Card heading */
+.destination h2 {
+color: #0a3d62;
+margin-top: 10px;
+}
+/* Card description */
+.destination p {
+color: #333;
+}
+/* Book Now button */
+.destination button {
+background-color: #f39c12; /* orange */
+color: white;
+border: none;
+padding: 30px 45px;
+margin-top: 30px;
+cursor: pointer;
+border-radius: 15px;
+transition: background-color 0.3s;
+}
+.destination button:hover {
+background-color: #ff9f1c; /* lighter orange on hover */
+}
+/* Hover effect on card */
+.destination:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+border-top-color: #f39c12; /* change top border on hover */
+}
+/* Responsive for mobile */
+@media (max-width: 768px) {
+.destination {
+flex: 1 1 100%;
+max-width: 100%;
+}
+}
+
+.captcha-box{
+margin-top:15px;
+color:#000;
+}
+
+#captchaQuestion{
+font-weight:bold;
+}
+
+.captcha-box p {
+color: #000;
+font-weight:bold;
+}
+
+.featured {
+padding: 50px;
+text-align: center;
+background-color: #f4f6f8;
+}
+.featured h2 {
+margin-bottom: 30px;
+color: #1f2a44;
+}
+.cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.card {
+background: white;
+width: 320px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+overflow: hidden;
+}
+.card img {
+width: 200%;
+height: 250px;
+object-fit: cover;
+}
+.card h3 {
+margin: 10px 0 5px;
+}
+.card p {
+font-size: 20px;
+padding-bottom: 12px;
+}
+
+@media (max-width:768px){
+.cards {
+flex-direction: column;
+align-items: center;
+}
+.card {
+width: 90%;
+}
+}
