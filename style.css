@@ -311,5 +311,19 @@ align-items: center;
 .card {
 width: 90%;
 }
-
 }
+.btn {  
+background-color: #0a3d62; /* dark blue */
+color: #ffffff;
+border: none;
+padding: 20px 30px;
+border-radius: 10px;
+cursor: pointer;
+}
+.btn:hover {
+background-color: #00a8ff; /* sky blue on hover */
+} 
+
+
+
+
