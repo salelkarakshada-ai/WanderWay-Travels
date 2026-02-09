@@ -29,7 +29,8 @@ margin-bottom: 15px;
 
 /* Hero Section */
 .hero {
-
+background-image: url("images/hero.jpg");
+height: 90vh;
 background-size: cover;
 background-position: center;
 height: 400px;
@@ -310,4 +311,5 @@ align-items: center;
 .card {
 width: 90%;
 }
+
 }
